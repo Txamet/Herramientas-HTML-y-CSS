@@ -52,6 +52,7 @@
     font-family: variables.$font-family-sans-serif;
     font-weight: bold;
     text-decoration-line: none;
+    -webkit-tap-highlight-color: transparent;
 
     @media (min-width: 1000px) {
       width: 120px;
