@@ -67,6 +67,7 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+    border: none;
   }
 
   &__figure-subtitulo {
@@ -81,7 +82,7 @@
     font-family: variables.$font-family-sans-serif;
     font-weight: bold;
     color: functions.colores("enlace", "defecto");
-    text-decoration-style: dotted;
+    text-decoration: none;
 
     &:hover,
     &:focus {
