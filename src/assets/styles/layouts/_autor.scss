@@ -1,0 +1,39 @@
+@use "../variables";
+@use "../functions";
+@use "reset";
+@use "contenedor";
+@use "titulo";
+@use "detalle";
+
+
+.autor {
+  margin-block: 1rem;
+
+  &__nombre { 
+    font-weight: bold;
+    font-size: 1.15rem;
+
+    @media (min-width: 1000px) { font-size: 1.25rem; }
+  }
+
+  &__lista { list-style: none; }
+
+  &__lista-item {
+    padding-left: 1rem;
+    padding-block: 0.5rem;
+    font-size: 1.15rem;
+
+    @media (min-width: 1000px) { font-size: 1.25rem; }
+  }
+
+  &__lista-item-enlace {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.15rem;
+    overflow-wrap: anywhere;
+
+    @media (min-width: 1000px) { font-size: 1.25rem; }
+    
+  }
+}
+

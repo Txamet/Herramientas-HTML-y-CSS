@@ -1,0 +1,13 @@
+
+@use "../functions";
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  color: functions.colores("texto", "fondo-claro");
+  background-color: functions.colores("fondo", "secundario");
+  margin-inline: 1rem;
+}

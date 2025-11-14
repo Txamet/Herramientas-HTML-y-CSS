@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta web donde encontrarás toda la información ideal para visitar los mejores pueblos de Cataluña.">
+    <title>Portada | Pueblos de Cataluña</title>
+    <link rel="stylesheet" href="./assets/styles/home.scss" />
+  </head>
+  <body data-page="inicio">
+
+    <include src="./views/header/header.html"></include>
+
+    <main>
+      <section class="portada portada__transparente">
+        <div>
+          <h1 class="portada__titulo">Pueblos de Cataluña</h1>
+          <p class="portada__parrafo">Descubre pueblos de Cataluña ideales para visitar y conocer su historia.</p>
+        </div>
+      </section>
+
+      <section class="contenedor">
+        <h1 class="titulo">Pueblos destacados</h1>
+
+        <div class="listado-tarjetas">
+        <div class="tarjeta">
+          <div class="tarjeta__foto">
+            <figure class="tarjeta__foto-figure">
+              <a href="./besalu.html">
+                <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/besalu/besalu-panoramica.jpg" alt="Vista panorámica de Besalú">
+              </a>
+              <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/users/adolforumbo-4853436/" target="new">Adolfo Rumbo</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/photos/bridge-river-medieval-stones-5696831/" target="new">Pixabay</a></figcaption>
+            </figure>
+          </div>
+          <div class="tarjeta__texto">
+            <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="./besalu.html">Besalú, un viaje al pasado</a></h2>
+            <p class="tarjeta__texto-parrafo">Besalú es uno de los conjuntos medievales mejor conservados de Cataluña, atravesado por el río Fluvià. Conocida por su Pont Vell del siglo XI, es un cruce de comunicaciones entre Girona y Francia. Destacan las iglesias de Sant Vicenç, Santa Maria y la miqvé judía. Celebra fiestas tradicionales como la procesión dels Dolors y la feria medieval.</p>
+          </div>
+        </div>
+    
+        <div class="tarjeta">
+          <div class="tarjeta__foto">
+            <figure class="tarjeta__foto-figure">
+              <a href="./cadaques.html">
+                <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/cadaques/cadaques-panoramica.jpg" alt="Vista costera de Cadaqués">
+              </a>
+              <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/users/joaquinaranoa-292186/" target="new">Joaquin Aranoa</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/photos/costa-brava-catalonia-landscape-838671/" target="new">Pixabay</a></figcaption>
+            </figure>
+          </div>
+          <div class="tarjeta__texto">
+            <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="./cadaques.html">Cadaqués, la esencia de la Costa Brava</a></h2>
+            <p class="tarjeta__texto-parrafo">Cadaqués, situado en el corazón de la bahía y custodiado por el Cap de Creus y el Cap de Norfeu, combina su rico pasado medieval y modernista con el atractivo de sus calas y el agua cristalina. Famosa por su conexión con artistas como Salvador Dalí.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="boton" href="./pueblos.html">Ver todos los pueblos</a>
+      </section>
+
+    </main>
+
+    <include src="./views/top-button/top-button.html"></include>
+    <include src="./views/footer/footer.html"></include>
+    <script type="module" src="app.js"></script>
+
+  </body>
+</html>

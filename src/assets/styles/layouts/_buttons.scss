@@ -1,0 +1,53 @@
+@use "../variables";
+@use "../functions";
+
+.top-button {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 16px; 
+  z-index: 99; 
+  border: 2px solid functions.colores("fondo", "secundario"); 
+  outline: none; 
+  background-color: functions.colores("fondo", "primario"); 
+  color: functions.colores("texto", "fondo-oscuro"); 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50%; 
+  font-size: 1.13rem; 
+
+  @media (min-width: 1000px) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    border: 2px solid functions.colores("fondo", "primario"); 
+    color: functions.colores("fondo", "primario"); 
+    background-color: functions.colores("fondo", "secundario");
+  }
+}
+
+.boton {
+  width: auto;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid functions.colores("fondo", "secundario");
+  color: functions.colores("texto", "fondo-oscuro");
+  background-color: functions.colores("fondo", "primario");
+  font-family: variables.$font-family-sans-serif;
+  font-weight: bold;
+  text-decoration-line: none;
+
+  @media (min-width: 1000px) {
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid functions.colores("fondo", "primario");
+    color: functions.colores("fondo", "primario");
+    background-color: functions.colores("fondo", "secundario");
+  }
+}

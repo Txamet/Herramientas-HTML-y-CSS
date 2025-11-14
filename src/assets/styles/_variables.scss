@@ -1,0 +1,31 @@
+@use "dependencies";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$font-family-logo: "Pacifico";
+
+
+$colores: (
+  "fondo": (
+    "primario": rgb(55, 94, 151),
+    "secundario": rgb(255, 255, 255),
+    "secundario-transparente": rgb(255, 255, 255, 0.5),
+  ),
+
+  "texto": (
+    "fondo-claro": rgb(26, 26, 26),
+    "fondo-oscuro": rgb(253, 246, 227)
+  ),
+
+  "enlace": (
+    "defecto": rgb(55, 94, 151),
+    "hover": rgb(76,0, 153)
+  )
+);
+
+$imagen-portada: "../images/rupit/rupit-panoramica.jpg"

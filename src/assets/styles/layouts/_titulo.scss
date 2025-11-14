@@ -1,0 +1,32 @@
+@use "../variables";
+
+.titulo {
+  font-family: variables.$font-family-sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-block: 2rem;
+
+  @media (min-width: 600px) { font-size: 2.5rem; }
+
+  @media (min-width: 1000px) {
+    margin-block: 4rem;
+    font-size: 3rem;
+  }
+
+  &__secundario {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-family: variables.$font-family-sans-serif;
+    font-size: 1.5rem;
+
+    @media (min-width: 1000px) { font-size: 2rem; }
+  }
+
+  &__terciario {
+    font-family: variables.$font-family-sans-serif;
+    font-size: 1.35rem;
+    padding-top: 1.5rem;
+
+    @media (min-width: 1000px) { font-size: 1.5rem; }
+  }
+}
