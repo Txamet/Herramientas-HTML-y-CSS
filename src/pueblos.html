@@ -6,6 +6,7 @@
   <meta name="description" content="Aquí encontrararás la lista de los pueblos de Cataluña que hay en nuestra web.">
   <title>Lista de pueblos | Pueblos de Cataluña</title>
   <link rel="stylesheet" href="./assets/styles/pueblos.scss">
+  <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
 </head>
 <body data-page="pueblos">
 
@@ -18,12 +19,24 @@
     <div class="listado-tarjetas">
       <div class="tarjeta">
         <div class="tarjeta__foto">
-          <figure class="tarjeta__foto-figure">
-            <a href="./besalu.html">
-              <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/besalu/besalu-panoramica.jpg" alt="Vista panorámica de Besalú">
-            </a>
-            <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/users/adolforumbo-4853436/" target="new">Adolfo Rumbo</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/photos/bridge-river-medieval-stones-5696831/" target="new">Pixabay</a></figcaption>
-          </figure>
+          <a href="./besalu.html">
+            <picture class="tarjeta__foto-figure">
+                <source 
+                  type="image/avif"
+                  srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=324, 
+                    ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=486 2x, 
+                    ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=648 3x" />
+                <source 
+                  type="image/webp"
+                  srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=324, 
+                    ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=486 2x, 
+                    ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=648 3x" />
+                <img 
+                  class="tarjeta__foto-imagen"
+                  src="./assets/images/besalu/besalu-portada-zoom.jpg"
+                  alt="Vista panorámica de Besalú" />
+            </picture>
+          </a>
         </div>
         <div class="tarjeta__texto">
           <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="./besalu.html">Besalú, un viaje al pasado</a></h2>
@@ -33,12 +46,29 @@
   
       <div class="tarjeta">
         <div class="tarjeta__foto">
-          <figure class="tarjeta__foto-figure">
-            <a href="./cadaques.html">
-              <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/cadaques/cadaques-panoramica.jpg" alt="Vista costera de Cadaqués">
-            </a>
-            <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/users/joaquinaranoa-292186/" target="new">Joaquin Aranoa</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/photos/costa-brava-catalonia-landscape-838671/" target="new">Pixabay</a></figcaption>
-          </figure>
+          <a href="./cadaques.html">
+            <picture class="tarjeta__foto-figure">
+                <source 
+                  type="image/avif"
+                  srcset="./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=324, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=486 2x, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=648 3x" />
+                <source 
+                  type="image/webp"
+                  srcset="./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=324, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=486 2x, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=648 3x" />
+                <source 
+                  type="image/jpg"
+                  srcset="./assets/images/cadaques/cadaques-portada-zoom.jpg?width=324, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=486 2x, 
+                    ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=648 3x" />
+                <img 
+                  class="tarjeta__foto-imagen"
+                  src="./assets/images/cadaques/cadaques-portada-zoom.jpg"
+                  alt="Vista costera de Cadaqués" />
+            </picture>
+          </a>
         </div>
         <div class="tarjeta__texto">
           <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="./cadaques.html">Cadaqués, la esencia de la Costa Brava</a></h2>
@@ -48,12 +78,29 @@
   
       <div class="tarjeta">
         <div class="tarjeta__foto">
-          <figure class="tarjeta__foto-figure">
-            <a href="">
-              <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/miravet/miravet-panoramica.jpg" alt="Vista costera de Cadaqués">
-            </a>
-            <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/users/susnpics-10235783/" target="new">Susanne Stöckli</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://pixabay.com/photos/spain-miravet-priory-flow-castle-4577538/" target="new">Pixabay</a></figcaption>
-          </figure>
+          <a href="">
+            <picture class="tarjeta__foto-figure">
+                <source 
+                  type="image/avif"
+                  srcset="./assets/images/miravet/miravet-portada-zoom.jpg?as=avif&width=324, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?as=avif&width=486 1.5x, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?as=avif&width=648 2x" />
+                <source 
+                  type="image/webp"
+                  srcset="./assets/images/miravet/miravet-portada-zoom.jpg?as=webp&width=324, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?as=webp&width=486 1.5x, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?as=webp&width=648 2x" />
+                <source 
+                  type="image/jpg"
+                  srcset="./assets/images/miravet/miravet-portada-zoom.jpg?width=324, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?width=486 1.5x, 
+                    ./assets/images/miravet/miravet-portada-zoom.jpg?width=648 2x" />
+                <img 
+                  class="tarjeta__foto-imagen"
+                  src="./assets/images/miravet/miravet-portada-zoom.jpg"
+                  alt="Vista costera de Miravet" />
+            </picture>
+          </a>
         </div>
         <div class="tarjeta__texto">
           <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="">Miravet, legado templario sobre el Ebro</a></h2>
@@ -63,12 +110,29 @@
 
       <div class="tarjeta">
         <div class="tarjeta__foto">
-          <figure class="tarjeta__foto-figure">
-            <a href="">
-              <img class="tarjeta__foto-imagen" width="1000" height="563" src="./assets/images/rupit/rupit-panoramica.jpg" alt="Vista panorámica de Rupit">
-            </a>
-            <figcaption class="tarjeta__foto-subtitulo">Foto de <a class="tarjeta__foto-subtitulo-enlace" href="https://unsplash.com/es/@lacarta" target="new">Santiago Lacarta</a> en <a class="tarjeta__foto-subtitulo-enlace" href="https://unsplash.com/es/fotos/edificio-de-hormigon-marron-bajo-el-cielo-azul-durante-el-dia-TDO5SLAdkig" target="new">Unsplash</a></figcaption>
-          </figure>
+          <a href="">
+            <picture class="tarjeta__foto-figure">
+                <source 
+                  type="image/avif"
+                  srcset="./assets/images/rupit/rupit-portada-zoom.jpg?as=avif&width=324, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?as=avif&width=486 1.5x, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?as=avif&width=648 2x" />
+                <source 
+                  type="image/webp"
+                  srcset="./assets/images/rupit/rupit-portada-zoom.jpg?as=webp&width=324, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?as=webp&width=486 1.5x, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?as=webp&width=648 2x" />
+                <source 
+                  type="image/jpg"
+                  srcset="./assets/images/rupit/rupit-portada-zoom.jpg?width=324, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?width=486 1.5x, 
+                    ./assets/images/rupit/rupit-portada-zoom.jpg?width=648 2x" />
+                <img 
+                  class="tarjeta__foto-imagen"
+                  src="./assets/images/rupit/rupit-portada-zoom.jpg"
+                  alt="Vista panorámica de Rupit" />
+            </picture>
+          </a>
         </div>
         <div class="tarjeta__texto">
           <h2 class="tarjeta__texto-titulo"><a class="tarjeta__texto-enlace" href="">Rupit, el encanto de un pueblo medieval</a></h2>

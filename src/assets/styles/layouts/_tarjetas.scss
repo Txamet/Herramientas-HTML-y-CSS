@@ -7,14 +7,20 @@
   gap: 1rem;
 
   @media (min-width: 460px) {
-    margin-inline: 3rem;
+    margin-inline: 1rem;
     margin-bottom: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   @media (min-width: 1000px) {
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1000px;
+    gap: 2rem;
   }
 }
 
@@ -22,57 +28,54 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border: 2px solid functions.colores("fondo", "primario");
-  border-radius: 10px;
-  min-width: 45%;
+  border-bottom: 2px solid functions.colores("fondo", "primario");
+  max-width: 324px;
 
-  &__foto-figure { position: relative; }
-
-  &__foto-imagen {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+  @media (min-width: 768px) {
+    border: 2px solid functions.colores("fondo", "primario");
+    max-width: 340px;
+    padding: 0.5rem;
   }
 
-  &__foto-subtitulo {
-    font-size: 0.75rem;
-    background-color: functions.colores("fondo", "secundario-transparente");
-    position: absolute;
-    bottom: 0.75rem;
-    right: 0.3rem;
+  &:last-child {
+    border-bottom: none;
 
-    @media (min-width: 460px) { font-size: 1rem; }
+    @media (min-width: 768px) { border-bottom: 2px solid functions.colores("fondo", "primario"); }
   }
 
-  &__foto-subtitulo-enlace {
-    text-decoration: none;
-    font-family: variables.$font-family-sans-serif;
-    font-weight: bold;
-    color: functions.colores("enlace", "defecto");
+  &__foto { 
+    align-self: center;
+    overflow: hidden;
 
-    &:hover,
-    &:focus { 
-      text-decoration-line: underline; 
-      color: functions.colores("enlace", "hover");
+    &:hover .tarjeta__foto-imagen {
+      transform: scale(1.2);
     }
   }
 
-  &__texto { padding-bottom: 1rem; }
+
+  &__foto-imagen {
+    width: 324px;
+    height: 182px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transform-origin: center;
+    transition: transform 0.6s cubic-bezier(.22, .61, .36, 1);
+  }
+
+  &__texto { padding: 1rem; }
 
   &__texto-titulo {
     font-size: 1.35rem;
     line-height: 2rem;
-    padding-block: 0.5rem;
+    padding-bottom: 0.5rem;
     font-family: variables.$font-family-sans-serif;
 
     @media (min-width: 460px) { 
       font-size: 1.75rem;
-      padding-block: 1rem;
+      padding-bottom: 1rem;
     }
 
-    @media (min-width: 1000px) { padding-block: 1.5rem; }
+    @media (min-width: 1000px) { padding-bottom: 1.5rem; }
 
   }
 
@@ -89,7 +92,6 @@
     line-height: 1.5rem;
 
     @media (min-width: 460px) { 
-      font-size: 1.2rem; 
       line-height: 1.75rem;
     }
 

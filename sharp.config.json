@@ -1,0 +1,13 @@
+{
+  "jpeg": {
+    "quality": 80
+  },
+  "webp": {
+    "quality": 70
+  },
+  "avif": {
+    "quality": 45,
+    "effort": 5,
+    "chromaSubsampling": "4:2:0"
+  }
+}

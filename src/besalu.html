@@ -6,6 +6,7 @@
   <meta name="description" content="Descubre qué ver, qué hacer, cuando ir, el clima y la historia y tradicción de Besalú.">
   <title>Besalú | Pueblos de Cataluña</title>
   <link rel="stylesheet" href="./assets/styles/detalle.scss">
+  <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
 </head>
 <body>
   
@@ -21,7 +22,23 @@
 
       <figure class="articulo__figure">
 
-        <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-panoramica.jpg" alt="Vista panorámica de Besalú">
+        <picture>
+
+          <source media="(max-width: 460px)" srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=428" type="image/avif"/>
+          <source media="(max-width: 460px)" srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=428" type="image/webp"/>
+
+          <source media="(max-width: 600px)" srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=520" type="image/avif"/>
+          <source media="(max-width: 600px)" srcset="./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=520" type="image/webp"/>
+
+          <source media="(max-width: 820px)" srcset="./assets/images/besalu/besalu-panoramica.jpg?as=avif&width=724" type="image/avif"/>
+          <source media="(max-width: 820px)" srcset="./assets/images/besalu/besalu-panoramica.jpg?as=webp&width=724" type="image/webp"/>
+
+          <source srcset="./assets/images/besalu/besalu-panoramica.jpg?as=avif&width=1000" type="image/avif"/>
+          <source srcset="./assets/images/besalu/besalu-panoramica.jpg?as=webp&width=1000" type="image/webp"/>
+          <source srcset="./assets/images/besalu/besalu-panoramica.jpg?width=1000"/>
+
+          <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-panoramica.jpg" alt="Vista panorámica de Besalú">
+        </picture>
 
         <figcaption class="articulo__figure-subtitulo">Foto de <a class="articulo__enlace" href="https://pixabay.com/users/adolforumbo-4853436/" target="new">Adolfo Rumbo</a> en <a class="articulo__enlace" href="https://pixabay.com/photos/bridge-river-medieval-stones-5696831/" target="new">Pixabay</a></figcaption>
 
@@ -46,7 +63,53 @@
 
       <figure class="articulo__figure">
 
-        <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-iglesia-santa-maria.jpg" alt="Iglesia de Santa María en Besalú">
+        <picture>
+          <source 
+            type="image/avif"
+            srcset="
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=avif&width=428 428w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=avif&width=520 520w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=avif&width=724 724w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=avif&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <source 
+            type="image/webp"
+            srcset="
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=webp&width=428 428w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=webp&width=520 520w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=webp&width=724 724w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?as=webp&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <img 
+            class="articulo__figure-imagen" 
+            srcset="
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?width=428 428w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?width=520 520w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?width=724 724w,
+              ./assets/images/besalu/besalu-iglesia-santa-maria.jpg?width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            "
+            src="./assets/images/besalu/besalu-iglesia-santa-maria.jpg" 
+            alt="Iglesia de Santa María en Besalú" />
+        </picture>
+        
 
         <figcaption class="articulo__figure-subtitulo">Foto de <a class="articulo__enlace" href="https://pixabay.com/users/jaimefpec-649654/" target="new">Jaime Fernández</a> en <a class="articulo__enlace" href="https://pixabay.com/photos/besalu-church-catalonia-spain-570780/" target="new">Pixabay</a></figcaption>
 
@@ -95,7 +158,52 @@
 
       <figure class="articulo__figure">
 
-        <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-puente.jpg" alt="Puente en Besalú">
+        <picture>
+          <source 
+            type="image/avif"
+            srcset="
+              ./assets/images/besalu/besalu-puente.jpg?as=avif&width=428 428w,
+              ./assets/images/besalu/besalu-puente.jpg?as=avif&width=520 520w,
+              ./assets/images/besalu/besalu-puente.jpg?as=avif&width=724 724w,
+              ./assets/images/besalu/besalu-puente.jpg?as=avif&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <source 
+            type="image/webp"
+            srcset="
+              ./assets/images/besalu/besalu-puente.jpg?as=webp&width=428 428w,
+              ./assets/images/besalu/besalu-puente.jpg?as=webp&width=520 520w,
+              ./assets/images/besalu/besalu-puente.jpg?as=webp&width=724 724w,
+              ./assets/images/besalu/besalu-puente.jpg?as=webp&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <img 
+            class="articulo__figure-imagen" 
+            srcset="
+              ./assets/images/besalu/besalu-puente.jpg?width=428 428w,
+              ./assets/images/besalu/besalu-puente.jpg?width=520 520w,
+              ./assets/images/besalu/besalu-puente.jpg?width=724 724w,
+              ./assets/images/besalu/besalu-puente.jpg?width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            "
+            src="./assets/images/besalu/besalu-puente.jpg" 
+            alt="Puente en Besalú" />
+        </picture>
 
         <figcaption class="articulo__figure-subtitulo">Foto de <a class="articulo__enlace" href="https://pixabay.com/users/jaimefpec-649654/" target="new">Jaime Fernández</a> en <a class="articulo__enlace" href="https://pixabay.com/photos/besalu-catalonia-spain-bridge-570776/" target="new">Pixabay</a></figcaption>
 
@@ -122,7 +230,52 @@
 
       <figure class="articulo__figure">
 
-        <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-plaza-mayor.jpg" alt="Iglesia de Santa María en Besalú">
+        <picture>
+          <source 
+            type="image/avif"
+            srcset="
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=avif&width=428 428w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=avif&width=520 520w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=avif&width=724 724w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=avif&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <source 
+            type="image/webp"
+            srcset="
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=webp&width=428 428w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=webp&width=520 520w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=webp&width=724 724w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?as=webp&width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            " />
+          <img 
+            class="articulo__figure-imagen" 
+            srcset="
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?width=428 428w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?width=520 520w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?width=724 724w,
+              ./assets/images/besalu/besalu-plaza-mayor.jpg?width=1000 1000w
+            "
+            sizes="
+              (max-width: 460px) 428px,
+              (max-width: 600px) 520px,
+              (max-width: 820px) 724px,
+              1000px
+            "
+            src="./assets/images/besalu/besalu-plaza-mayor.jpg" 
+            alt="Plaza mayor de Besalú" />
+        </picture>
 
         <figcaption class="articulo__figure-subtitulo">Foto de <a class="articulo__enlace" href="https://pixabay.com/users/matressa_-5912997/" target="new">María Teresa Martínez</a> en <a class="articulo__enlace" href="https://pixabay.com/photos/besal%c3%ba-medieval-porticoed-square-4903979/" target="new">Pixabay</a></figcaption>
 
