@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aquí encontrararás la lista de los pueblos de Cataluña que hay en nuestra web.">
   <title>Lista de pueblos | Pueblos de Cataluña</title>
-  <link rel="stylesheet" href="./assets/styles/pueblos.scss">
+
+  <link rel="preload" href="./assets/styles/pueblos.scss" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./assets/styles/pueblos.scss">
+  </noscript>
+
+  <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  
   <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
+  
   <script type="module" src="app.js" defer></script>
 </head>
 <body data-page="pueblos">
