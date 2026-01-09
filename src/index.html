@@ -6,16 +6,17 @@
     <meta name="description" content="En esta web donde encontrarás toda la información ideal para visitar los mejores pueblos de Cataluña.">
     <title>Portada | Pueblos de Cataluña</title>
 
-    <link rel="preload" href="./assets/styles/home.scss" as="style" onload="this.rel='stylesheet'">
+    <!-- <link rel="preload" href="./assets/styles/home.scss" as="style" onload="this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="./assets/styles/home.scss" />
     </noscript>
 
-    <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin>
-
-    <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
+    <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
     
-    <script type="module" src="app.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/home.scss" />
+    <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
+    <script type="module" src="./assets/scripts/general.js" defer></script>
+
   </head>
   <body data-page="inicio">
 
@@ -26,6 +27,64 @@
       <h1 class="oculto">Pueblos de Cataluña</h1>
       
       <div class="portada">
+
+        <picture class="">
+          <source 
+            type="image/avif"
+            srcset="
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=460 460w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=764 764w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=1000 1000w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=1500 1500w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=2600 2600w
+            "
+            sizes="
+              (max-width: 460px) 460px,
+              (max-width: 764px) 764px,
+              (max-width: 1000px) 1000px,
+              (max-width: 1500px) 1500px,
+              2600px
+            " />
+          <source 
+            type="image/webp"
+            srcset="
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=460 460w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=764 764w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=1000 1000w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=1500 1500w,
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=2600 2600w
+            "
+            sizes="
+              (max-width: 460px) 460px,
+              (max-width: 764px) 764px,
+              (max-width: 1000px) 1000px,
+              (max-width: 1500px) 1500px,
+              2600px
+            " />
+          <img 
+            class="portada__imagen" 
+            srcset="
+              ./assets/images/rupit/rupit-panoramica.jpg?width=460 460w,
+              ./assets/images/rupit/rupit-panoramica.jpg?width=764 764w,
+              ./assets/images/rupit/rupit-panoramica.jpg?width=1000 1000w
+              ./assets/images/rupit/rupit-panoramica.jpg?width=1500 1500w
+              ./assets/images/rupit/rupit-panoramica.jpg?width=2600 2600w
+            "
+            sizes="
+              (max-width: 460px) 460px,
+              (max-width: 764px) 764px,
+              (max-width: 1000px) 1000px,
+              (max-width: 1500px) 1500px,
+              2600px
+            "
+            src="./assets/images/rupit/rupit-panoramica.jpg" 
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+            alt="Vista panorámica de Rupit" />
+        </picture>        
+
+        
         <div class="portada__contenido">
 
           <svg class="portada__titulo-svg" viewBox="0 0 700 100" aria-hidden="true">
@@ -89,6 +148,8 @@
                       1000px
                     "
                     src="./assets/images/besalu/besalu-portada-zoom.jpg" 
+                    width="1000"
+                    height="563"
                     alt="Vista panorámica de Besalú" />
                 </picture>
               </a>
@@ -146,6 +207,8 @@
                       1000px
                     "
                     src="./assets/images/cadaques/cadaques-portada-zoom.jpg" 
+                    width="1000"
+                    height="563"
                     loading="lazy"
                     alt="Vista costera de Cadaqués" />
                 </picture>

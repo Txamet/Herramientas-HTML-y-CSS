@@ -21,6 +21,98 @@
 
 
 .portada {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  aspect-ratio: 16/9;
+  padding-left: 5%;
+  padding-top: 2.5%;
+  
+
+  @media (min-width: 460px) {
+    padding-block: 1rem;
+    height: auto;
+    max-height: 900px;
+  }
+
+  @media (min-width: 1000px) {
+      padding-left: 6%;
+      padding-top: 3.5%;
+    }
+
+  @media (min-width: 1200px) {
+      padding-left: 7.5%;
+      padding-top: 5%;
+  }
+
+  &__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 75%;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 1600px) { max-width: 60%; }
+    
+  }
+
+  &__titulo-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: entrada 1s ease-out forwards;
+  }
+
+  &__texto-animado {
+    font-size: 72px;
+    font-family: variables.$font-family-logo;
+    fill: functions.colores("texto", "fondo-claro");
+
+  }
+
+  &__parrafo {
+    position: relative;
+    opacity: 0;
+    animation: aparecer 1s ease-in forwards;
+    animation-delay: 1.5s;
+    font-family: variables.$font-family-sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    max-width: 75%;
+    z-index: 2;
+
+    @media (min-width: 600px) { font-size: 1.25rem; }
+
+    @media (min-width: 800px) { font-size: 1.5rem; }
+
+    @media (min-width: 1000px) { font-size: 1.75rem; }
+
+    @media (min-width: 1200px) { font-size: 2rem; }
+
+    @media (min-width: 1600px) { 
+      font-size: 3rem;
+      max-width: 60%;
+    }
+  }
+
+}
+/* 
+CÓDIGO ANTIGUO, CON IMAGEN EN EL CSS
+
+.portada {
   
   background-image: image-set(
     url("../images/rupit/rupit-panoramica.jpg?as=avif&width=460") type("image/avif") 1x,
@@ -49,7 +141,7 @@
   @media (min-width: 460px) {
     padding-block: 1rem;
     height: auto;
-    max-height: 75dvh;
+    max-height: 900px;
     aspect-ratio: 16/9;
 
     background-image: image-set(
@@ -153,7 +245,7 @@
     }
   }
 
-}
+} */
 
 .listado-pueblos {
   display: flex;

@@ -6,16 +6,16 @@
   <meta name="description" content="Descubre qué ver, qué hacer, cuando ir, el clima y la historia y tradicción de Besalú.">
   <title>Besalú | Pueblos de Cataluña</title>
 
-  <link rel="preload" href="./assets/styles/detalle.scss" as="style" onload="this.rel='stylesheet'">
+  <!-- <link rel="preload" href="./assets/styles/detalle.scss" as="style" onload="this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="./assets/styles/detalle.scss">
-  </noscript>
-  
-  <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  </noscript> 
+  <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
 
+  <link rel="stylesheet" href="./assets/styles/detalle.scss">
   <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
+  <script type="module" src="./assets/scripts/detalle.js" defer></script>
   
-  <script type="module" src="app.js" defer></script>
 </head>
 <body>
   
@@ -46,7 +46,13 @@
           <source srcset="./assets/images/besalu/besalu-panoramica.jpg?as=webp&width=1000" type="image/webp"/>
           <source srcset="./assets/images/besalu/besalu-panoramica.jpg?width=1000"/>
 
-          <img class="articulo__figure-imagen" src="./assets/images/besalu/besalu-panoramica.jpg" alt="Vista panorámica de Besalú">
+          <img 
+            class="articulo__figure-imagen" 
+            src="./assets/images/besalu/besalu-panoramica.jpg"
+            width="1000"
+            height="563" 
+            fetchpriority="high" 
+            alt="Vista panorámica de Besalú">
         </picture>
 
         <figcaption class="articulo__figure-subtitulo">Foto de <a class="articulo__enlace" href="https://pixabay.com/users/adolforumbo-4853436/" target="new">Adolfo Rumbo</a> en <a class="articulo__enlace" href="https://pixabay.com/photos/bridge-river-medieval-stones-5696831/" target="new">Pixabay</a></figcaption>
@@ -116,6 +122,8 @@
               1000px
             "
             src="./assets/images/besalu/besalu-iglesia-santa-maria.jpg" 
+            width="1000"
+            height="563"
             loading="lazy"
             alt="Iglesia de Santa María en Besalú" />
         </picture>
@@ -142,7 +150,67 @@
 
       <figure class="articulo__figure">
 
-        <iframe class="articulo__figure-imagen" src="https://www.youtube.com/embed/PnQrpWrGdck?si=wGES1HEU17k-sQQK" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
+        <!-- <iframe class="articulo__figure-imagen" width="1000"
+            height="563" src="https://www.youtube.com/embed/PnQrpWrGdck?si=wGES1HEU17k-sQQK" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen>
+        </iframe> -->
+
+        <div
+          class="youtube"
+          data-id="PnQrpWrGdck"
+          role="button"
+          aria-label="Reproducir vídeo de YouTube">
+
+          <picture>
+
+            <source 
+              type="image/avif"
+              srcset="  
+                https://i.ytimg.com/vi/PnQrpWrGdck/mqdefault.jpg?as=avif 428w, 
+                https://i.ytimg.com/vi/PnQrpWrGdck/hqdefault.jpg?as=avif 724w,   
+                https://i.ytimg.com/vi/PnQrpWrGdck/maxresdefault.jpg?as=avif 1000w
+              "
+              sizes="
+                (max-width: 460px) 428px,
+                (max-width: 820px) 724px,
+                1000px
+              " >
+
+            <source 
+              type="image/webp"
+              srcset="
+                https://i.ytimg.com/vi/PnQrpWrGdck/mqdefault.jpg?as=webp 428w, 
+                https://i.ytimg.com/vi/PnQrpWrGdck/hqdefault.jpg?as=webp 724w,   
+                https://i.ytimg.com/vi/PnQrpWrGdck/maxresdefault.jpg?as=webp 1000w
+              "
+              sizes="
+                (max-width: 460px) 428px,
+                (max-width: 820px) 724px,
+                1000px
+              " >
+
+            <img 
+              class="youtube__foto"
+              srcset="
+                https://i.ytimg.com/vi/PnQrpWrGdck/mqdefault.jpg 460w,
+                https://i.ytimg.com/vi/PnQrpWrGdck/hqdefault.jpg 768w,               
+                https://i.ytimg.com/vi/PnQrpWrGdck/maxresdefault.jpg 1000w
+              "
+              sizes="
+                (max-width: 460px) 428px,
+                (max-width: 820px) 724px,
+                1000px
+              " 
+              src="https://i.ytimg.com/vi/PnQrpWrGdck/maxresdefault.jpg"
+              onerror="this.src='https://i.ytimg.com/vi/PnQrpWrGdck/hqdefault.jpg'"
+              loading="lazy"
+              width="1000"
+              height="563" 
+              alt="Vídeo de YouTube sobre Besalú">
+
+          </picture>  
+
+          <button class="youtube__play" aria-hidden="true">&#9654</button>  
+        </div>
 
         <figcaption class="articulo__figure-subtitulo">Video de <a class="articulo__enlace" href="https://www.youtube.com/@MarcelEnRuta" target="new">Marcel en ruta</a> en <a class="articulo__enlace" href="https://www.youtube.com/watch?v=PnQrpWrGdck" target="new">YouTube</a></figcaption>
 
@@ -212,6 +280,8 @@
               1000px
             "
             src="./assets/images/besalu/besalu-puente.jpg" 
+            width="1000"
+            height="563"
             loading="lazy"
             alt="Puente en Besalú" />
         </picture>
@@ -285,6 +355,8 @@
               1000px
             "
             src="./assets/images/besalu/besalu-plaza-mayor.jpg"
+            width="1000"
+            height="563"
             loading="lazy" 
             alt="Plaza mayor de Besalú" />
         </picture>
