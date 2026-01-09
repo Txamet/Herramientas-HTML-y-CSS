@@ -6,13 +6,7 @@
   <meta name="description" content="Descubre qué ver, qué hacer, cuando ir, el clima y la historia y tradicción de Cadaqués.">
   <title>Cadaqués | Pueblos de Cataluña</title>
 
-  <!-- <link rel="preload" href="./assets/styles/detalle.scss" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="./assets/styles/detalle.scss">  
-  </noscript>
-  
-  <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
-
+  <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> 
   <link rel="stylesheet" href="./assets/styles/detalle.scss"> 
   <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
   <script type="module" src="./assets/scripts/detalle.js" defer></script>
@@ -148,14 +142,11 @@
 
       <figure class="articulo__figure">
 
-        <!-- <iframe class="articulo__figure-imagen" width="1000"
-            height="563" src="https://www.youtube.com/embed/Wre6LTIX2OQ?si=1t-N8gQAfZl1O3Cv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-        loading="lazy" allowfullscreen></iframe> -->
-
         <div
           class="youtube"
           data-id="Wre6LTIX2OQ"
           role="button"
+          tabindex="0"
           aria-label="Reproducir vídeo de YouTube">
 
           <picture>
@@ -207,7 +198,7 @@
 
           </picture>  
 
-          <button class="youtube__play" aria-hidden="true">&#9654</button>  
+          <button class="youtube__play" aria-label="Reproducir vídeo de YouTube"><span aria-hidden="true">&#9654</span></button>  
         </div>
 
         <figcaption class="articulo__figure-subtitulo">Vídeo de <a class="articulo__enlace" href="https://www.youtube.com/@MarcelEnRuta" target="new">Marcel en ruta</a> en <a class="articulo__enlace" href="https://www.youtube.com/watch?v=Wre6LTIX2OQ" target="new">YouTube</a></figcaption>

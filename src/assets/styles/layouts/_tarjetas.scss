@@ -52,23 +52,14 @@
     }
   }
 
-
   &__foto-imagen {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    transform-origin: center;
-    transition: transform 0.6s cubic-bezier(.22, .61, .36, 1);
-  }
-  /* &__foto-imagen {
     width: 324px;
     height: 182px;
     aspect-ratio: 16/9;
     object-fit: cover;
     transform-origin: center;
     transition: transform 0.6s cubic-bezier(.22, .61, .36, 1);
-  } */
+  }
 
   &__texto { padding: 1rem; }
 

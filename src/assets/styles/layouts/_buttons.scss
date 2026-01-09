@@ -2,7 +2,6 @@
 @use "../functions";
 
 .top-button {
-  display: none; 
   position: fixed; 
   bottom: 20px; 
   right: 16px; 
@@ -15,6 +14,9 @@
   padding: 10px; 
   border-radius: 50%; 
   font-size: 1.13rem; 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   @media (min-width: 1000px) {
     font-size: 1.5rem;
@@ -24,6 +26,11 @@
     border: 2px solid functions.colores("fondo", "primario"); 
     color: functions.colores("fondo", "primario"); 
     background-color: functions.colores("fondo", "secundario");
+  }
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
 

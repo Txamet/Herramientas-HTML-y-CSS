@@ -73,7 +73,7 @@
     overflow: visible;
     opacity: 0;
     transform: translateX(-100%);
-    animation: entrada 1s ease-out forwards;
+    //animation: entrada 1s ease-out forwards;
   }
 
   &__texto-animado {
@@ -86,8 +86,8 @@
   &__parrafo {
     position: relative;
     opacity: 0;
-    animation: aparecer 1s ease-in forwards;
-    animation-delay: 1.5s;
+    //animation: aparecer 1s ease-in forwards;
+    //animation-delay: 1.5s;
     font-family: variables.$font-family-sans-serif;
     font-size: 1.15rem;
     font-weight: 600;
@@ -105,6 +105,26 @@
     @media (min-width: 1600px) { 
       font-size: 3rem;
       max-width: 60%;
+    }
+  }
+
+  &--cargando {
+    .portada__titulo-svg,
+    .portada__parrafo {
+      animation: none;
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+
+  &--listo {
+    .portada__titulo-svg {
+      animation: entrada 1s ease-out forwards;
+    }
+
+    .portada__parrafo {
+      animation: aparecer 1s ease-in forwards;
+      animation-delay: 1.5s;
     }
   }
 

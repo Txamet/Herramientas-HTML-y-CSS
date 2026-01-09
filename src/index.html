@@ -6,15 +6,10 @@
     <meta name="description" content="En esta web donde encontrarás toda la información ideal para visitar los mejores pueblos de Cataluña.">
     <title>Portada | Pueblos de Cataluña</title>
 
-    <!-- <link rel="preload" href="./assets/styles/home.scss" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="./assets/styles/home.scss" />
-    </noscript>
-
-    <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
-    
+    <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./assets/styles/home.scss" />
     <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
+    <script src="./assets/scripts/util/portada-home.js" defer></script>
     <script type="module" src="./assets/scripts/general.js" defer></script>
 
   </head>
@@ -26,9 +21,9 @@
 
       <h1 class="oculto">Pueblos de Cataluña</h1>
       
-      <div class="portada">
+      <div class="portada portada--cargando">
 
-        <picture class="">
+        <picture>
           <source 
             type="image/avif"
             srcset="
@@ -66,8 +61,8 @@
             srcset="
               ./assets/images/rupit/rupit-panoramica.jpg?width=460 460w,
               ./assets/images/rupit/rupit-panoramica.jpg?width=764 764w,
-              ./assets/images/rupit/rupit-panoramica.jpg?width=1000 1000w
-              ./assets/images/rupit/rupit-panoramica.jpg?width=1500 1500w
+              ./assets/images/rupit/rupit-panoramica.jpg?width=1000 1000w,
+              ./assets/images/rupit/rupit-panoramica.jpg?width=1500 1500w,
               ./assets/images/rupit/rupit-panoramica.jpg?width=2600 2600w
             "
             sizes="
