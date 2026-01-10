@@ -1,7 +1,7 @@
 @use "../variables";
 @use "../functions";
 
-.top-button {
+/* .top-button {
   position: fixed; 
   bottom: 20px; 
   right: 16px; 
@@ -30,6 +30,36 @@
   &--visible {
     opacity: 1;
     visibility: visible;
+  }
+} */
+
+.top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 45px;
+  height: 45px;
+  position: fixed; 
+  bottom: 20px; 
+  right: 16px; 
+  z-index: 99; 
+  border: 2px solid functions.colores("fondo", "secundario"); 
+  outline: none; 
+  background-color: functions.colores("fondo", "primario"); 
+  color: functions.colores("texto", "fondo-oscuro"); 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50%; 
+  font-size: 1.13rem; 
+
+  @media (min-width: 1000px) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    border: 2px solid functions.colores("fondo", "primario"); 
+    color: functions.colores("fondo", "primario"); 
+    background-color: functions.colores("fondo", "secundario");
   }
 }
 

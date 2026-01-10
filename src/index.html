@@ -9,8 +9,10 @@
     <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./assets/styles/home.scss" />
     <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
-    <script src="./assets/scripts/util/portada-home.js" defer></script>
-    <script type="module" src="./assets/scripts/general.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js" defer></script>
 
   </head>
   <body data-page="inicio">
@@ -21,7 +23,8 @@
 
       <h1 class="oculto">Pueblos de Cataluña</h1>
       
-      <div class="portada portada--cargando">
+      <div class="portada">
+      <!-- <div class="portada portada--cargando"> -->
 
         <picture>
           <source 
@@ -30,15 +33,13 @@
               ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=460 460w,
               ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=764 764w,
               ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=1000 1000w,
-              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=1500 1500w,
-              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=2600 2600w
+              ./assets/images/rupit/rupit-panoramica.jpg?as=avif&width=1500 1500w
             "
             sizes="
               (max-width: 460px) 460px,
               (max-width: 764px) 764px,
               (max-width: 1000px) 1000px,
-              (max-width: 1500px) 1500px,
-              2600px
+              100vw
             " />
           <source 
             type="image/webp"
@@ -46,15 +47,13 @@
               ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=460 460w,
               ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=764 764w,
               ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=1000 1000w,
-              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=1500 1500w,
-              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=2600 2600w
+              ./assets/images/rupit/rupit-panoramica.jpg?as=webp&width=1500 1500w
             "
             sizes="
               (max-width: 460px) 460px,
               (max-width: 764px) 764px,
               (max-width: 1000px) 1000px,
-              (max-width: 1500px) 1500px,
-              2600px
+              100vw
             " />
           <img 
             class="portada__imagen" 
@@ -62,19 +61,16 @@
               ./assets/images/rupit/rupit-panoramica.jpg?width=460 460w,
               ./assets/images/rupit/rupit-panoramica.jpg?width=764 764w,
               ./assets/images/rupit/rupit-panoramica.jpg?width=1000 1000w,
-              ./assets/images/rupit/rupit-panoramica.jpg?width=1500 1500w,
-              ./assets/images/rupit/rupit-panoramica.jpg?width=2600 2600w
+              ./assets/images/rupit/rupit-panoramica.jpg?width=1500 1500w
+
             "
             sizes="
               (max-width: 460px) 460px,
               (max-width: 764px) 764px,
               (max-width: 1000px) 1000px,
-              (max-width: 1500px) 1500px,
-              2600px
+              100vw
             "
             src="./assets/images/rupit/rupit-panoramica.jpg" 
-            width="1920"
-            height="1080"
             fetchpriority="high"
             alt="Vista panorámica de Rupit" />
         </picture>        
@@ -105,46 +101,40 @@
                     srcset="
                       ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=428 428w,
                       ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=520 520w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=724 724w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=1000 1000w
+                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=avif&width=724 724w
+
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
+
                     " />
                   <source 
                     type="image/webp"
                     srcset="
                       ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=428 428w,
                       ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=520 520w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=724 724w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=1000 1000w
+                      ./assets/images/besalu/besalu-portada-zoom.jpg?as=webp&width=724 724w
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
                     " />
                   <img 
                     class="pueblo__foto-imagen-izquierda" 
                     srcset="
                       ./assets/images/besalu/besalu-portada-zoom.jpg?width=428 428w,
                       ./assets/images/besalu/besalu-portada-zoom.jpg?width=520 520w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?width=724 724w,
-                      ./assets/images/besalu/besalu-portada-zoom.jpg?width=1000 1000w
+                      ./assets/images/besalu/besalu-portada-zoom.jpg?width=724 724w
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
                     "
                     src="./assets/images/besalu/besalu-portada-zoom.jpg" 
-                    width="1000"
-                    height="563"
                     alt="Vista panorámica de Besalú" />
                 </picture>
               </a>
@@ -164,46 +154,38 @@
                     srcset="
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=428 428w,
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=520 520w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=724 724w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=1000 1000w
+                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=avif&width=724 724w
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
                     " />
                   <source 
                     type="image/webp"
                     srcset="
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=428 428w,
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=520 520w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=724 724w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=1000 1000w
+                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?as=webp&width=724 724w
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
                     " />
                   <img 
                     class="pueblo__foto-imagen-derecha" 
                     srcset="
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=428 428w,
                       ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=520 520w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=724 724w,
-                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=1000 1000w
+                      ./assets/images/cadaques/cadaques-portada-zoom.jpg?width=724 724w
                     "
                     sizes="
                       (max-width: 460px) 428px,
                       (max-width: 600px) 520px,
-                      (max-width: 820px) 724px,
-                      1000px
+                      724px
                     "
                     src="./assets/images/cadaques/cadaques-portada-zoom.jpg" 
-                    width="1000"
-                    height="563"
                     loading="lazy"
                     alt="Vista costera de Cadaqués" />
                 </picture>
@@ -226,6 +208,8 @@
     <include src="./views/top-button/top-button.html"></include>
     <include src="./views/footer/footer.html"></include>
     
+    <script type="module" src="./assets/scripts/home.js" defer></script>
+    <!-- <script type="module" src="./assets/scripts/home.js" defer></script> -->
 
   </body>
 </html>

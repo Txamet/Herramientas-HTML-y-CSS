@@ -9,8 +9,11 @@
   <link rel="preload" href="./assets/fonts/Pacifico-Regular.woff2" as="font" type="font/woff2" crossorigin> 
   <link rel="stylesheet" href="./assets/styles/detalle.scss"> 
   <link rel="shortcut icon" href="./assets/images/favicon/cataluna.png" type="image/x-icon">
-  <script type="module" src="./assets/scripts/detalle.js" defer></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js" defer></script>
+  
 </head>
 <body>
   <include src="./views/header/header.html"></include>
@@ -43,8 +46,6 @@
           <img 
             class="articulo__figure-imagen" 
             src="./assets/images/cadaques/cadaques-panoramica.jpg" 
-            width="1000"
-            height="563"
             fetchpriority="high"
             alt="Vista costera de Cadaqués">
 
@@ -115,8 +116,6 @@
               1000px
             "
             src="./assets/images/cadaques/cadaques-iglesia-santa-maria.jpg" 
-            width="1000"
-            height="563"
             loading="lazy"
             alt="Iglesia de Santa María de Cadaqués" />
         </picture>
@@ -192,8 +191,6 @@
               src="https://i.ytimg.com/vi/Wre6LTIX2OQ/maxresdefault.jpg"
               onerror="this.src='https://i.ytimg.com/vi/Wre6LTIX2OQ/hqdefault.jpg'"
               loading="lazy"
-              width="1000"
-              height="563" 
               alt="Vídeo de YouTube sobre Besalú">
 
           </picture>  
@@ -266,8 +263,6 @@
               1000px
             "
             src="./assets/images/cadaques/cadaques-puerto.jpg" 
-            width="1000"
-            height="563"
             loading="lazy"
             alt="Puerto de Cadaqués" />
         </picture>
@@ -331,8 +326,6 @@
               1000px
             "
             src="./assets/images/cadaques/cadaques-calle.jpg" 
-            width="1000"
-            height="563"
             loading="lazy"
             alt="Calle del casco antiguo de Cadaqués" />
         </picture>
@@ -354,6 +347,8 @@
 
   <include src="./views/top-button/top-button.html"></include>
   <include src="./views/footer/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/detalle.js" defer></script>
   
 </body>
 </html>
