@@ -1,5 +1,5 @@
-@use "../variables";
-@use "../functions";
+//@use "../variables";
+//@use "../functions";
 
 .top-button {
   position: fixed; 
@@ -16,7 +16,6 @@
   font-size: 1.13rem; 
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   @media (min-width: 1000px) {
     font-size: 1.5rem;
