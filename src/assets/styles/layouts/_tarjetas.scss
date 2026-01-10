@@ -55,7 +55,7 @@
   &__foto-imagen {
     width: 324px;
     height: 182px;
-    //aspect-ratio: 16/9;
+    aspect-ratio: 16/9;
     object-fit: cover;
     transform-origin: center;
     transition: transform 0.6s cubic-bezier(.22, .61, .36, 1);

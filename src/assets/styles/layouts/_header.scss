@@ -16,11 +16,10 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  min-height: 150px;
-  padding-block: 1rem;
+  height: 150px;
   background-color: functions.colores("fondo", "primario");
 
-  @media (min-width: 1000px) { min-height: 200px; }
+  @media (min-width: 1000px) { height: 200px; }
 
   &__logo {
     font-family: variables.$font-family-logo;

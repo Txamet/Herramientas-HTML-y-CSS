@@ -9,5 +9,3 @@ if (imagen.complete) {
     portada.classList.replace("portada--cargando", "portada--listo");
   })
 }
-
-

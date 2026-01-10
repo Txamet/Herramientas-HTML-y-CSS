@@ -2,10 +2,10 @@ let topButton;
 
 const scrollFunction = () => {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    topButton.style.display = "block";
+    topButton.classList.add("top-button--visible");
 
   } else {
-    topButton.style.display = "none";
+    topButton.classList.remove("top-button--visible");
   }
 }
 
